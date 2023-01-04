@@ -1,0 +1,73 @@
+.tu-pedido{
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 40px;
+ background-color:rgb(3,3,3);
+ border:15px solid #c9aa1e;
+ flex-wrap: wrap;
+ width: 100%;
+ height: 700px;
+ color: white;
+ @media(max-width:800px){
+    width: 100%;
+ }
+ &__title{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & h2{
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        background-color: #c9aa1e;
+        align-items: center;
+        color:#fff;
+        font-weight: 900;
+        font-size: 35px;
+        border: 5px solid #c9aa1e;
+        border-radius: 26px;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color:rgb(3,3,3) ;
+            cursor: pointer;
+        }
+        @media(max-width:800px){
+            font-size:25px;
+            font-weight: 800;
+        }
+    }
+  & p{
+   text-align: center;
+   position: relative;
+   top: -10px;
+   font-weight: bold;
+   font-size: 30px; 
+   color: #dabf46;
+   font-family: 'Righteous', cursive;
+   padding: 20px;
+  }
+ }
+ &__images-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 36px;
+  & img{
+    width: 400px;
+    max-height: 500px;
+    @media(max-width:800px){
+        height: 300px;
+    }
+  }
+}
+}
+
+
+

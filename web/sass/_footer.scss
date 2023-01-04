@@ -1,0 +1,141 @@
+.footer{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    @media(max-width:800px){
+        top: 490px;
+    }
+    &-img{
+        margin-top: -2px;
+        height: 600px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity: .6;
+        background-image: url('https://p1.pxfuel.com/preview/169/303/587/grill-burgers-food-meat-hamburgers-smoking.jpg');
+    }
+    &__overlay{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        opacity: 1;
+        display: flex;
+        width: 100%;
+        height: 600px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__info{
+        display: flex;
+        width: 100%;
+        height: 450px;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 3px solid rgb(255, 255, 255);
+        flex-wrap: wrap;
+        @media(max-width:1115px){
+            justify-content: center;
+
+        }      
+        &__redes{
+            display: flex;
+            justify-content: space-evenly;
+            & i{
+                position: relative;
+                top: 40px;
+                font-size: 60px;
+                margin: 50px;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    cursor: pointer;
+                    color: violet;
+
+                }
+                @media(max-width:1115px){
+                    font-size: 40px;
+                    margin: 30px;
+
+                }
+            }
+
+        }
+        &-logo-redes__container{
+          text-align: center;
+          position: relative;
+          top: -70px;
+          flex-wrap: wrap;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 100%;
+          justify-content: center;
+          & h2{
+            text-align: center;
+            font-family: 'Yeseva One', cursive;
+            font-size: 70px;
+            font-weight: 900;
+            color: black;
+          }
+          @media(max-width:1115px){
+            margin-top: -150px;
+          }
+        }
+    }
+    &__info-contact-container{
+        position: relative;
+        top: -90px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 200px;
+        & p{
+            font-weight: bold;
+            font-size: 29px;
+            @media(max-width:1115px){
+                font-size: 19px;
+            }
+        }
+        & h3{
+            color:#c9aa1e;
+            text-align: center;
+            font-weight: 900;
+            font-size: 35px;
+            @media(max-width:1115px){
+                font-size: 25px;
+    
+            }
+        }
+        & span{
+            border-bottom: 1px solid blue;
+            font-weight: 900;
+        }
+        & button{
+            background-color: #c9aa1e;
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                background-color: white;
+                color: #c9aa1e;
+                border: 1px solid #c9aa1e;
+            }
+        }
+        @media(max-width:1115px){
+            margin-top: -170px;
+            margin-right: 0;
+            top: 0;
+        }
+    }
+   &__rigths{
+     width:100%;
+     display: flex;
+     justify-content: flex-start;
+     font-weight: bold;
+
+   }   
+}

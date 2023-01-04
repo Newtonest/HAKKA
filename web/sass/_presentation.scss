@@ -1,0 +1,72 @@
+.presentation{
+    width:100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    &__img-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease-in-out;
+        height: 80%;
+        min-width: 100%;
+        position: relative;
+        flex-wrap: wrap;
+        @media(max-width:800px){
+            width: 100%;
+        }
+       
+        &:hover{
+            opacity: 0.9;
+            
+        }
+        &:hover .overlay{
+            opacity: 1;
+        }
+        &__overlay{
+            position: absolute;
+            flex-wrap: wrap;
+            &:hover{
+                opacity: 1;
+       
+            }
+            transition: all 0.4s ease-in-out;
+            opacity: 0;
+            top:49%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            & p{
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                font-size: 40px;
+            }
+             & span{
+                font-size: 340px;
+             }
+        }
+        &__img{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://www.telegraph.co.uk/content/dam/rugby-union/2022/11/17/TELEMMGLPICT000315182826_trans_NvBQzQNjv4BqltkgLssqXySW7Cp0cRfw5nkRCGLHJSD1FzcqcHtO_WY.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            @media(max-width:800px){
+             
+            }
+        }
+    }
+}
