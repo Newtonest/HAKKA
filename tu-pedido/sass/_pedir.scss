@@ -1,0 +1,42 @@
+.pedir{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__pedir-ya {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-weight: 800;
+       font-size: 30px;
+       height: 100px;
+       background-color: #c9aa1e;;
+       border-bottom: 1px solid white;
+       border-top: 1px solid white;
+    }
+    &__options {
+        width: 100%;
+        background-color: aliceblue;
+        &-list {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        list-style: none;
+        &__link {
+            border: none;
+            font-size: 20px;
+            position: relative;
+            left: -15px;
+            font-weight: bold;
+            transition: all 0.2s;
+            @media(max-width:800px) {
+                font-size: 17px;
+                font-weight: 700;
+            }
+            &:hover {
+                cursor: pointer;
+                color:#c9aa1e;
+            }
+        }
+        }
+    }
+}
